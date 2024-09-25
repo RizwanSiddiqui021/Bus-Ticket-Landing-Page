@@ -7,6 +7,12 @@
     font-family: "Raleway", sans-serif;
 }
 
+/* shared styles start */
+
+
+
+/* shared styles end */
+
 .header-section{
     max-width: 1180px;
     margin: 20px auto;
@@ -67,6 +73,18 @@
     border: 2px	solid rgba(29, 209, 0, 0.1);
     color: rgba(0, 0, 0, 1);
     transition: 0.5s ease;
+}
+
+.hamburger-logo-container{
+    display: none;
+}
+
+.hamburger-logo{
+    display: none;
+}
+
+.side-bar-container{
+    display: none;
 }
 
 .hero-section{
@@ -166,4 +184,114 @@
     color: rgba(3, 7, 18, 0.6);
     font-size: 1.125rem;
     font-weight: 400;
+}
+
+/* mobile responsive styles */
+
+@media screen and (max-width: 576px){
+    
+    .header-section{
+        position: relative;
+    }
+
+    .nav-bar{
+        justify-content: space-around;
+    }
+
+    .nav-links-container{
+     display: none;
+    }
+
+    .hamburger-logo-container{
+        display: block;
+    }
+
+    .hamburger-logo{
+        display: block;
+        width: 48px;
+    }
+    
+    .side-bar-container{
+        background-color: rgba(29, 209, 0, 0.9);
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        width: 50%;
+        min-height: 62vh;
+        margin-top: 12px;
+        margin-right: 20px;
+        margin-left: 50%;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        gap: 40px;
+        position: absolute;
+        z-index: 999;
+        box-shadow: -5px 0 10px -5px rgba(0, 0, 0, 0.2);
+    }
+
+    .side-bar-link{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 1);
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    
+    .signup-btn{
+        display: none;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .hero-section{
+        margin: 0 20px;
+        padding: 60px;
+    }
+
+    .hero-title{
+        font-size: 2.5rem;
+        margin-top: 60px;
+        margin-bottom: 16px;
+    }
+    
+    .hero-sub-title{
+        font-size: 2.5rem;
+    }
+    
+    .hero-description{
+        font-size: 0.9rem;
+        margin-bottom: 32px;
+    }
+    
+    .book-btn{
+        padding: 16px 24px;
+        font-size: 1rem; 
+    }
+
+    .hero-cards-container{
+        top: 158%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .hero-card{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .middle{
+        transform: scale(1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-card-texts{
+        text-align: center;
+    }
 }
