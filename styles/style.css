@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Raleway", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 /* shared styles start */
@@ -52,6 +54,7 @@
 }
 
 .nav-link:hover{
+    cursor: pointer;
     color: rgba(29, 209, 0, 1);
     text-decoration: underline;
     transition: 0.3s ease;
@@ -186,6 +189,113 @@
     font-weight: 400;
 }
 
+/* coupon-section-styles-start */
+
+.coupon-section{
+    max-width: 1180px;
+    margin: 160px auto;
+}
+
+.coupon-section-title-title{
+    color: rgb(3, 7, 18);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.coupon-cards-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.coupon-card{
+    background-color: rgb(255, 191, 15);
+    border: none;
+    border-radius: 24px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.coupon-card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.coupon-offer{}
+
+.coupon-offer-title{
+    color: rgba(3, 7, 18, 0.8);
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.coupon-order-sub-description{
+    color: rgba(3, 7, 18, 0.8);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.coupon-order-description{
+    color: rgba(3, 7, 18, 0.5);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.coupon-divider-image{}
+
+.coupon-code{}
+
+.coupon-code-title{
+    color: rgb(3, 7, 18);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+}
+
+.coupon-code-description{
+    color: rgba(3, 7, 18, 0.4);
+    font-size: 1.25rem; 
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+}
+
+.pink{
+    background-color: rgb(247, 140, 156);
+}
+
+.see-offers-container{
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.see-offers-btn{
+    background-color: rgba(29, 209, 0, 0.1);
+    border: 2px	solid rgba(29, 209, 0, 0.4);
+    border-radius: 12px;
+    padding: 20px 30px;
+    color: rgb(29, 209, 0);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.see-offers-btn:hover{
+    cursor: pointer;
+    background-color: rgba(29, 209, 0, 0.4);
+    border: 2px	solid rgba(29, 209, 0, 0.1);
+    color: rgba(0, 0, 0, 1);
+    transition: 0.5s ease;
+}
+
+/* coupon-section-styles-end */
+
 /* mobile responsive styles */
 
 @media screen and (max-width: 576px){
@@ -216,9 +326,8 @@
         border-top-left-radius: 16px;
         border-bottom-left-radius: 16px;
         width: 50%;
-        min-height: 62vh;
-        margin-top: 12px;
-        margin-right: 20px;
+        min-height: 550px;
+        margin-top: 20px;
         margin-left: 50%;
         padding-bottom: 20px;
         display: flex;
